@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/atasbawah"
+    android:paddingLeft="@dimen/kanankiri"
+    android:paddingRight="@dimen/kanankiri"
+    android:paddingTop="@dimen/atasbawah"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp"
+        android:paddingLeft="@dimen/kanankiri"
+        android:paddingRight="@dimen/kanankiri"
+        android:paddingTop="@dimen/atasbawah2"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView4">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/atasbawah"
+                android:paddingLeft="@dimen/kanankiri"
+                android:paddingRight="@dimen/kanankiri"
+                android:paddingTop="@dimen/atasbawah"
+
+                tools:context="com.example.muffinman.myapplication.utama"
+                android:layout_alignTop="@+id/scrollView4"
+                android:layout_alignLeft="@+id/scrollView4"
+                android:layout_alignStart="@+id/scrollView4">
+
+                <RelativeLayout
+                    android:layout_width="400dp"
+                    android:layout_height="230dp">
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="230dp"
+                        android:src="@drawable/tempatgambar"
+                        android:id="@+id/tempatfoto"
+                        />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="240dp"
+                        android:src="@drawable/kepalarusapanjang"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/gambarmaubeli"
+                        />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="240dp"
+                        android:src="@drawable/kepalarusapanjang"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/gambarmaubeli"
+                        android:layout_toEndOf="@id/gambarmaubeli"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 100.000"
+                    android:id="@id/hargaproduknya"
+                    android:textSize="30dp"
+                    android:textColor="#8e292d"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="250dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sampah Yang Berkurang : "
+                        android:layout_below="@id/hargaproduknya"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tulisanberat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="2,5 Kg"
+                        android:textColor="#8e292d"
+                        android:id="@id/beratproduk"
+                        android:layout_alignTop="@+id/tulisanberat"
+                        android:layout_toRightOf="@+id/tulisanberat"
+                        android:layout_toEndOf="@+id/tulisanberat" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stok : "
+                        android:layout_below="@id/tulisanberat"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tulisanstok"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="30"
+                        android:textColor="#8e292d"
+                        android:id="@id/stokproduk"
+                        android:layout_alignTop="@+id/tulisanstok"
+                        android:layout_toRightOf="@+id/tulisanstok"
+                        android:layout_toEndOf="@+id/tulisanstok" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kategori : "
+                        android:layout_below="@id/tulisanstok"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tulisankategori"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Hiasan"
+                        android:textColor="#8e292d"
+                        android:id="@id/kategoriproduk"
+                        android:layout_alignTop="@+id/tulisankategori"
+                        android:layout_toRightOf="@+id/tulisankategori"
+                        android:layout_toEndOf="@+id/tulisankategori" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deskripi Produk : "
+                        android:layout_below="@id/tulisankategori"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tulisandeskripsi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Disini ntar deskripsi dari barang diatas fuhawudcba wac ajwkck jhckhsd cadchjasbkj sdhbbslj."
+                        android:layout_below="@id/tulisandeskripsi"
+                        android:textColor="#8e292d"
+                        android:id="@id/deskripsiproduk"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_marginTop="5dp"
+                       />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Kepala Rusa"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logobeli"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

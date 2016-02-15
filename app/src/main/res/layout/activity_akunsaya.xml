@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/atasbawah"
+    android:paddingLeft="@dimen/kanankiri"
+    android:paddingRight="@dimen/kanankiri"
+    android:paddingTop="@dimen/atasbawah"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp"
+        android:paddingLeft="@dimen/kanankiri"
+        android:paddingRight="@dimen/kanankiri"
+        android:paddingTop="@dimen/atasbawah2"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/atasbawah"
+                    android:paddingLeft="@dimen/kanankiri"
+                    android:paddingRight="@dimen/kanankiri"
+                    android:paddingTop="@dimen/atasbawah"
+                    tools:context="com.example.muffinman.myapplication.utama">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/namauserkotaknya"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/namakotak"
+                        />
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/fotouser"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginStart="11dp"
+                            android:id="@+id/fotouser"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lee Fau Zan "
+                            android:layout_toRightOf="@id/fotouser"
+                            android:layout_toEndOf="@id/fotouser"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="11dp"
+                            android:textColor="#FFF"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:src="@drawable/penanda"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/penanda3"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pembelian"
+                android:layout_marginTop="87dp"
+                android:id="@+id/pembelian"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/penanda3"
+                android:layout_toStartOf="@id/penanda3"
+                android:layout_marginRight="15dp"/>
+
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/penjualan"
+                android:id="@+id/penjualan"
+                android:layout_alignTop="@+id/pembelian"
+                android:layout_toRightOf="@id/penanda3"
+                android:layout_toEndOf="@id/penanda3"
+                android:layout_marginLeft="15dp"
+
+                />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pemberitahuan"
+                android:layout_marginTop="30dp"
+                android:id="@+id/pemberitahuan"
+                android:layout_below="@id/pembelian"
+                android:layout_toLeftOf="@id/penanda3"
+                android:layout_toStartOf="@id/penanda3"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/lainlain"
+                android:layout_marginTop="30dp"
+                android:id="@+id/lainlain"
+                android:layout_below="@id/pembelian"
+                android:layout_toRightOf="@id/penanda3"
+                android:layout_toEndOf="@id/penanda3"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/beranda"
+        android:id="@+id/berandatombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/akunsaya"
+        android:id="@+id/akuntombol"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pencarian"
+        android:layout_alignTop="@+id/favtombol"
+        android:layout_centerInParent="true"
+        android:id="@+id/pencariantombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/favorite"
+        android:id="@+id/favtombol"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/berandatombol"
+        android:layout_toEndOf="@+id/berandatombol"
+        android:layout_toStartOf="@id/pencariantombol"
+        android:layout_toLeftOf="@id/pencariantombol"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/berita"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/pencariantombol"
+        android:layout_toEndOf="@id/pencariantombol"
+        android:layout_toStartOf="@id/akuntombol"
+        android:layout_toLeftOf="@id/akuntombol" />
+</RelativeLayout>

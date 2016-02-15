@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/atasbawah"
+    android:paddingLeft="@dimen/kanankiri"
+    android:paddingRight="@dimen/kanankiri"
+    android:paddingTop="@dimen/atasbawah"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp"
+        android:paddingLeft="@dimen/kanankiri"
+        android:paddingRight="@dimen/kanankiri"
+        android:paddingTop="@dimen/atasbawah2"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:background="#f1e5d9"
+                tools:context="com.example.muffinman.myapplication.utama">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto produk (minimal 1 foto)"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/tulisanfotoproduk"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/tambahfoto"
+                    android:layout_below="@id/tulisanfotoproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tambahfoto"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Produk :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/tambahfoto"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/namaproduk" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editnamaproduk"
+                    android:layout_below="@+id/namaproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat 1 barang (dalam gram) :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/editnamaproduk"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/beratproduk" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editberatt"
+                    android:layout_below="@id/beratproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga Produk :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/editberatt"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/hargaproduk"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edithargaproduk"
+                    android:layout_below="@+id/hargaproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stok Produk :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/edithargaproduk"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/stokproduk" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editstok"
+                    android:layout_below="@+id/stokproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Produk :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/editstok"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/desproduk" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deskripsiproduk"
+                    android:layout_below="@+id/desproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori Produk :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/deskripsiproduk"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/kategoriproduk"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editkategori"
+                    android:layout_below="@+id/kategoriproduk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah sampah yang digunakan :"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16dp"
+                    android:textColor="#8e292d"
+                    android:layout_below="@id/editkategori"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/jumlahsampah"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editjumlah"
+                    android:layout_below="@+id/jumlahsampah"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Jual"
+                    android:background="#8e292d"
+                    android:textColor="#FFF"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/editjumlah"
+                    android:layout_marginTop="20dp"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penjualan"
+        android:textSize="22dp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/judulpenjualan"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/iconpenjualan"
+        android:layout_toLeftOf="@id/judulpenjualan"
+        android:layout_toStartOf="@id/judulpenjualan"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/beranda"
+        android:id="@+id/berandatombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/akunsaya"
+        android:id="@+id/akuntombol"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pencarian"
+        android:layout_alignTop="@+id/favtombol"
+        android:layout_centerInParent="true"
+        android:id="@+id/pencariantombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/favorite"
+        android:id="@+id/favtombol"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/berandatombol"
+        android:layout_toEndOf="@+id/berandatombol"
+        android:layout_toStartOf="@id/pencariantombol"
+        android:layout_toLeftOf="@id/pencariantombol"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/berita"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/pencariantombol"
+        android:layout_toEndOf="@id/pencariantombol"
+        android:layout_toStartOf="@id/akuntombol"
+        android:layout_toLeftOf="@id/akuntombol" />
+</RelativeLayout>
