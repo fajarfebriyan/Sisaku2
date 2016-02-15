@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/atasbawah"
-    android:paddingLeft="@dimen/kanankiri"
-    android:paddingRight="@dimen/kanankiri"
-    android:paddingTop="@dimen/atasbawah"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
     android:background="#8e292d"
     tools:context="com.example.muffinman.myapplication.utama">
 
@@ -14,10 +14,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="55dp"
-        android:paddingLeft="@dimen/kanankiri"
-        android:paddingRight="@dimen/kanankiri"
-        android:paddingTop="@dimen/atasbawah2"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
         android:background="#8e292d"
         tools:context="com.example.muffinman.myapplication.utama">
 
@@ -25,31 +25,26 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
             android:background="#f1e5d9"
             tools:context="com.example.muffinman.myapplication.utama">
 
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/scrollView4">
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingBottom="@dimen/atasbawah"
-                android:paddingLeft="@dimen/kanankiri"
-                android:paddingRight="@dimen/kanankiri"
-                android:paddingTop="@dimen/atasbawah"
-
-                tools:context="com.example.muffinman.myapplication.utama"
-                android:layout_alignTop="@+id/scrollView4"
-                android:layout_alignLeft="@+id/scrollView4"
-                android:layout_alignStart="@+id/scrollView4">
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
 
                 <RelativeLayout
                     android:layout_width="400dp"
@@ -116,7 +111,7 @@
                         android:textSize="18dp"
                         android:text="2,5 Kg"
                         android:textColor="#8e292d"
-                        android:id="@id/beratproduk"
+                        android:id="@+id/beratproduk"
                         android:layout_alignTop="@+id/tulisanberat"
                         android:layout_toRightOf="@+id/tulisanberat"
                         android:layout_toEndOf="@+id/tulisanberat" />
@@ -138,7 +133,7 @@
                         android:textSize="18dp"
                         android:text="30"
                         android:textColor="#8e292d"
-                        android:id="@id/stokproduk"
+                        android:id="@+id/stokproduk"
                         android:layout_alignTop="@+id/tulisanstok"
                         android:layout_toRightOf="@+id/tulisanstok"
                         android:layout_toEndOf="@+id/tulisanstok" />
@@ -160,7 +155,7 @@
                         android:textSize="18dp"
                         android:text="Hiasan"
                         android:textColor="#8e292d"
-                        android:id="@id/kategoriproduk"
+                        android:id="@+id/kategoriproduk"
                         android:layout_alignTop="@+id/tulisankategori"
                         android:layout_toRightOf="@+id/tulisankategori"
                         android:layout_toEndOf="@+id/tulisankategori" />
@@ -183,7 +178,7 @@
                         android:text="Disini ntar deskripsi dari barang diatas fuhawudcba wac ajwkck jhckhsd cadchjasbkj sdhbbslj."
                         android:layout_below="@id/tulisandeskripsi"
                         android:textColor="#8e292d"
-                        android:id="@id/deskripsiproduk"
+                        android:id="@+id/deskripsiproduk"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
 

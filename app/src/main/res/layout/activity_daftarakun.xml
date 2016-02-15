@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/atasbawah"
-    android:paddingLeft="@dimen/kanankiri"
-    android:paddingRight="@dimen/kanankiri"
-    android:paddingTop="@dimen/atasbawah"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
     android:background="#8e292d"
     tools:context="com.example.muffinman.myapplication.utama">
 
@@ -14,36 +14,37 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="55dp"
-        android:paddingLeft="@dimen/kanankiri"
-        android:paddingRight="@dimen/kanankiri"
-        android:paddingTop="@dimen/atasbawah2"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
         android:background="#8e292d"
         tools:context="com.example.muffinman.myapplication.utama">
+
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="0dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
-            android:paddingTop="0dp"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
             android:background="#f1e5d9"
             tools:context="com.example.muffinman.myapplication.utama">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:background="#f1e5d9"
-            tools:context="com.example.muffinman.myapplication.utama">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
 
             <TextView
                 android:layout_width="match_parent"
@@ -165,7 +166,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="20"
-                android:id="@+id/editpass"
+                android:id="@+id/editpass1"
                 android:layout_below="@+id/pass"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -177,7 +178,7 @@
                 android:textColor="#8e292d"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@id/editpass"
+                android:layout_below="@id/editpass1"
                 android:layout_marginTop="10dp"
                 android:id="@+id/ulangpass"/>
             <EditText
@@ -229,7 +230,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/akunsaya"
-        android:id="@+id/akuntombol"
+        android:id="@+id/akuntombol1"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -241,7 +242,7 @@
         android:src="@drawable/pencarian"
         android:layout_alignTop="@+id/favtombol"
         android:layout_centerInParent="true"
-        android:id="@+id/pencariantombol" />
+        android:id="@+id/pencariantombol1" />
 
     <ImageView
         android:layout_width="50dp"
@@ -251,15 +252,15 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/berandatombol"
         android:layout_toEndOf="@+id/berandatombol"
-        android:layout_toStartOf="@id/pencariantombol"
-        android:layout_toLeftOf="@id/pencariantombol"/>
+        android:layout_toStartOf="@id/pencariantombol1"
+        android:layout_toLeftOf="@id/pencariantombol1"/>
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/berita"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/pencariantombol"
-        android:layout_toEndOf="@id/pencariantombol"
-        android:layout_toStartOf="@id/akuntombol"
-        android:layout_toLeftOf="@id/akuntombol" />
+        android:layout_toRightOf="@id/pencariantombol1"
+        android:layout_toEndOf="@id/pencariantombol1"
+        android:layout_toStartOf="@id/akuntombol1"
+        android:layout_toLeftOf="@id/akuntombol1" />
 </RelativeLayout>

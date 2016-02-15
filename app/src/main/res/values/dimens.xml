@@ -6,4 +6,7 @@
     <dimen name="kanankiri">0dp</dimen>
     <dimen name="atasbawah2">50dp</dimen>
     <dimen name="kanankiri2">50dp</dimen>
+    <dimen name="kotaknol">0dp</dimen>
+    <dimen name="kotaklimalima">55dp</dimen>
+    <dimen name="kotak16">16dp</dimen>
 </resources>

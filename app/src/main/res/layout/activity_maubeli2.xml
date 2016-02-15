@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/atasbawah"
-    android:paddingLeft="@dimen/kanankiri"
-    android:paddingRight="@dimen/kanankiri"
-    android:paddingTop="@dimen/atasbawah"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
     android:background="#8e292d"
     tools:context="com.example.muffinman.myapplication.utama">
 
@@ -14,10 +14,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="55dp"
-        android:paddingLeft="@dimen/kanankiri"
-        android:paddingRight="@dimen/kanankiri"
-        android:paddingTop="@dimen/atasbawah2"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
         android:background="#8e292d"
         tools:context="com.example.muffinman.myapplication.utama">
 
@@ -25,31 +25,28 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
             android:background="#f1e5d9"
             tools:context="com.example.muffinman.myapplication.utama">
 
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/scrollView4">
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
 
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingBottom="@dimen/atasbawah"
-                android:paddingLeft="@dimen/kanankiri"
-                android:paddingRight="@dimen/kanankiri"
-                android:paddingTop="@dimen/atasbawah"
 
-                tools:context="com.example.muffinman.myapplication.utama"
-                android:layout_alignTop="@+id/scrollView4"
-                android:layout_alignLeft="@+id/scrollView4"
-                android:layout_alignStart="@+id/scrollView4">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -178,7 +175,7 @@
                         />
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="170dp"
                     android:layout_below="@id/tulisandetailpengiriman"
                     android:background="#ffbd21">
 
@@ -233,18 +230,27 @@
                         android:layout_alignStart="@+id/kodepos"
                         android:textColor="#000"/>
 
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/kotakkuning"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/kuningtanda"/>
                     <Button
                         android:layout_width="140dp"
                         android:layout_height="40dp"
                         android:text="Pilih Alamat Lain"
                         android:id="@+id/alamatlain"
                         android:layout_alignParentBottom="true"
-                       android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:textColor="#FFF"
+                        android:layout_toLeftOf="@id/kuningtanda"
+                        android:layout_toStartOf="@id/kuningtanda"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
                         android:background="#8e292d"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="1dp"
+                        android:textColor="#FFF"
+                        android:layout_marginBottom="5dp"
+
                         />
                     <Button
                         android:layout_width="140dp"
@@ -252,14 +258,13 @@
                         android:text="Tambah Alamat"
                         android:layout_alignParentBottom="true"
                         android:id="@+id/tomboltambahalamat"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toLeftOf="@id/alamatlain"
-                        android:layout_toStartOf="@id/alamatlain"
+                       android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/kuningtanda"
+                        android:layout_toEndOf="@id/kuningtanda"
                         android:layout_marginRight="10dp"
                         android:textColor="#FFF"
                         android:background="#8e292d"
-                        android:layout_marginBottom="1dp"/>
+                        android:layout_marginBottom="5dp"/>
 
 
                 </RelativeLayout>
@@ -271,7 +276,7 @@
                     android:textSize="20dp"
                     android:id="@+id/tulisanestimasi"
                     android:layout_below="@id/tulisandetailpemesanan"
-                    android:layout_marginTop="340dp"
+                    android:layout_marginTop="360dp"
                     />
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -348,7 +353,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Harga Produk"
-                        android:id="@+id/hargaproduk"
+                        android:id="@+id/tulisanhargaproduk"
                         android:layout_below="@+id/textView11"
                         android:layout_alignLeft="@+id/textView11"
                         android:layout_alignStart="@+id/textView11"
@@ -360,9 +365,9 @@
                         android:layout_height="wrap_content"
                         android:text="Biaya Pengiriman"
                         android:id="@+id/tulisanbiayapengiriman"
-                        android:layout_below="@+id/hargaproduk"
-                        android:layout_alignLeft="@+id/hargaproduk"
-                        android:layout_alignStart="@+id/hargaproduk"
+                        android:layout_below="@+id/tulisanhargaproduk"
+                        android:layout_alignLeft="@+id/tulisanhargaproduk"
+                        android:layout_alignStart="@+id/tulisanhargaproduk"
                         android:layout_marginTop="19dp"
                         android:textColor="#8e292d" />
 
@@ -371,7 +376,7 @@
                         android:layout_height="wrap_content"
                         android:text=":"
                         android:id="@+id/textView14"
-                        android:layout_alignTop="@+id/hargaproduk"
+                        android:layout_alignTop="@+id/tulisanhargaproduk"
                         android:layout_alignLeft="@+id/textView13"
                         android:layout_alignStart="@+id/textView13" />
 
@@ -403,6 +408,74 @@
                         android:layout_alignBottom="@+id/textView16"
                         android:layout_alignLeft="@+id/textView15"
                         android:layout_alignStart="@+id/textView15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Rp. 107.096"
+                        android:textSize="28dp"
+                        android:id="@+id/totalpembayaran"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#8e292d" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JNE"
+                        android:id="@+id/namakurirpengiriman"
+                        android:layout_above="@+id/tulisankurir"
+                        android:layout_toRightOf="@+id/textView10"
+                        android:layout_toEndOf="@+id/textView10"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginStart="72dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reguler"
+                        android:id="@+id/namapaketpengiriman"
+                        android:layout_above="@+id/textView11"
+                        android:layout_alignLeft="@+id/namakurirpengiriman"
+                        android:layout_alignStart="@+id/namakurirpengiriman" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ya"
+                        android:id="@+id/biayaasuransi"
+                        android:layout_above="@+id/tulisanhargaproduk"
+                        android:layout_alignLeft="@+id/namapaketpengiriman"
+                        android:layout_alignStart="@+id/namapaketpengiriman" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 100.000"
+                        android:id="@+id/hargapproduk"
+                        android:layout_above="@+id/tulisanbiayapengiriman"
+                        android:layout_alignLeft="@+id/biayaasuransi"
+                        android:layout_alignStart="@+id/biayaasuransi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 7000"
+                        android:id="@+id/biayapengiriman"
+                        android:layout_above="@+id/textView16"
+                        android:layout_alignLeft="@+id/hargapproduk"
+                        android:layout_alignStart="@+id/hargapproduk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 96"
+                        android:id="@+id/kodetransfer"
+                        android:layout_alignBottom="@+id/textView17"
+                        android:layout_alignLeft="@+id/biayapengiriman"
+                        android:layout_alignStart="@+id/biayapengiriman" />
                 </RelativeLayout>
 
 

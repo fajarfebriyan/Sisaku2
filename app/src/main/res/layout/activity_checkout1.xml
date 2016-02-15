@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detail Pemesanan"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:id="@+id/tulisandetailpemesanan"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/tulisandetailpemesanan"
+                        android:background="#ffbd21">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Penjual :"
+                            android:id="@+id/tulisannamapenjual"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="14dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Produk :"
+                            android:id="@+id/tulisanproduk"
+                            android:layout_below="@+id/tulisannamapenjual"
+                            android:layout_marginTop="3dp"
+                            android:layout_alignLeft="@+id/tulisannamapenjual"
+                            android:layout_alignStart="@+id/tulisannamapenjual"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Joni"
+                            android:id="@+id/namasipenjual"
+                            android:layout_alignBottom="@+id/tulisannamapenjual"
+                            android:layout_toRightOf="@+id/tulisannamapenjual"
+                            android:layout_toEndOf="@+id/tulisannamapenjual"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/kepalarusa"
+                            android:id="@+id/iconkecilitem"
+                            android:layout_marginTop="3dp"
+                            android:layout_alignTop="@+id/tulisanproduk"
+                            android:layout_toRightOf="@+id/tulisanproduk"
+                            android:layout_toEndOf="@+id/tulisanproduk"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kepala Rusa"
+                            android:id="@+id/namaproduk"
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@id/tulisannamapenjual"
+                            android:layout_toRightOf="@id/iconkecilitem"
+                            android:layout_toEndOf="@id/iconkecilitem"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah Barang : "
+                            android:id="@+id/tulisanjumlahproduk"
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@+id/iconkecilitem"
+                            android:layout_alignLeft="@+id/tulisanproduk"
+                            android:layout_alignStart="@+id/tulisanproduk"
+                            android:textColor="#8e292d" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:id="@+id/jumlahpesan"
+                            android:layout_toRightOf="@id/tulisanjumlahproduk"
+                            android:layout_toEndOf="@id/tulisanjumlahproduk"
+                            android:layout_below="@id/iconkecilitem"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan :"
+                            android:id="@+id/textView"
+                            android:layout_below="@+id/tulisanjumlahproduk"
+                            android:layout_alignLeft="@+id/tulisanjumlahproduk"
+                            android:layout_alignStart="@+id/tulisanjumlahproduk"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Warna)"
+                            android:id="@+id/textView9"
+                            android:layout_alignTop="@+id/textView"
+                            android:layout_toRightOf="@+id/textView"
+                            android:layout_toEndOf="@+id/textView" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detail Pengiriman"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:id="@+id/tulisandetailpengiriman"
+                        android:layout_below="@id/tulisandetailpemesanan"
+                        android:layout_marginTop="160dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/tulisandetailpengiriman"
+                        android:background="#ffbd21">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat Kos"
+                            android:id="@+id/judulalamat"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Nama Almat jdifjdj dsjnvjs jknv No.134 "
+                            android:layout_below="@+id/judulalamat"
+                            android:layout_alignLeft="@+id/judulalamat"
+                            android:layout_alignStart="@+id/judulalamat"
+                            android:id="@+id/alamat"
+                            android:textColor="#000"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tangerang"
+                            android:id="@+id/namakota"
+                            android:layout_below="@+id/alamat"
+                            android:layout_alignLeft="@+id/alamat"
+                            android:layout_alignStart="@+id/alamat"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15810"
+                            android:id="@+id/kodepos"
+                            android:layout_below="@+id/namakota"
+                            android:layout_alignLeft="@+id/namakota"
+                            android:layout_alignStart="@+id/namakota"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Banten"
+                            android:id="@+id/namaprovinsi"
+                            android:layout_below="@+id/kodepos"
+                            android:layout_alignLeft="@+id/kodepos"
+                            android:layout_alignStart="@+id/kodepos"
+                            android:textColor="#000"/>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estimasi Harga"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:id="@+id/tulisanestimasi"
+                        android:layout_below="@id/tulisandetailpemesanan"
+                        android:layout_marginTop="340dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@id/tulisanestimasi"
+                        android:background="#ffbd21">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kurir Pengiriman "
+                            android:id="@+id/tulisankurirpengiriman"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="17dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paket Pengiriman"
+                            android:id="@+id/tulisankurir"
+                            android:layout_below="@+id/tulisankurirpengiriman"
+                            android:layout_alignLeft="@+id/tulisankurirpengiriman"
+                            android:layout_alignStart="@+id/tulisankurirpengiriman"
+                            android:layout_marginTop="17dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biaya Asuransi"
+                            android:id="@+id/textView11"
+                            android:layout_below="@+id/tulisankurir"
+                            android:layout_alignLeft="@+id/tulisankurir"
+                            android:layout_alignStart="@+id/tulisankurir"
+                            android:layout_marginTop="17dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView10"
+                            android:layout_alignTop="@+id/tulisankurirpengiriman"
+                            android:layout_toRightOf="@+id/tulisankurir"
+                            android:layout_toEndOf="@+id/tulisankurir"
+                            android:layout_marginLeft="29dp"
+                            android:layout_marginStart="29dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView12"
+                            android:layout_alignTop="@+id/tulisankurir"
+                            android:layout_alignLeft="@+id/textView10"
+                            android:layout_alignStart="@+id/textView10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView13"
+                            android:layout_alignTop="@+id/textView11"
+                            android:layout_alignLeft="@+id/textView12"
+                            android:layout_alignStart="@+id/textView12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harga Produk"
+                            android:id="@+id/tulisanhargaproduk"
+                            android:layout_below="@+id/textView11"
+                            android:layout_alignLeft="@+id/textView11"
+                            android:layout_alignStart="@+id/textView11"
+                            android:layout_marginTop="18dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biaya Pengiriman"
+                            android:id="@+id/tulisanbiayapengiriman"
+                            android:layout_below="@+id/tulisanhargaproduk"
+                            android:layout_alignLeft="@+id/tulisanhargaproduk"
+                            android:layout_alignStart="@+id/tulisanhargaproduk"
+                            android:layout_marginTop="19dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView14"
+                            android:layout_alignTop="@+id/tulisanhargaproduk"
+                            android:layout_alignLeft="@+id/textView13"
+                            android:layout_alignStart="@+id/textView13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView15"
+                            android:layout_alignTop="@+id/tulisanbiayapengiriman"
+                            android:layout_alignLeft="@+id/textView14"
+                            android:layout_alignStart="@+id/textView14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kode Transfer "
+                            android:id="@+id/textView16"
+                            android:layout_below="@+id/tulisanbiayapengiriman"
+                            android:layout_alignLeft="@+id/tulisanbiayapengiriman"
+                            android:layout_alignStart="@+id/tulisanbiayapengiriman"
+                            android:layout_marginTop="18dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView17"
+                            android:layout_alignBottom="@+id/textView16"
+                            android:layout_alignLeft="@+id/textView15"
+                            android:layout_alignStart="@+id/textView15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Rp. 107.096"
+                            android:textSize="28dp"
+                            android:id="@+id/totalpembayaran"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JNE"
+                            android:id="@+id/namakurirpengiriman"
+                            android:layout_above="@+id/tulisankurir"
+                            android:layout_toRightOf="@+id/textView10"
+                            android:layout_toEndOf="@+id/textView10"
+                            android:layout_marginLeft="72dp"
+                            android:layout_marginStart="72dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reguler"
+                            android:id="@+id/namapaketpengiriman"
+                            android:layout_above="@+id/textView11"
+                            android:layout_alignLeft="@+id/namakurirpengiriman"
+                            android:layout_alignStart="@+id/namakurirpengiriman" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ya"
+                            android:id="@+id/biayaasuransi"
+                            android:layout_above="@+id/tulisanhargaproduk"
+                            android:layout_alignLeft="@+id/namapaketpengiriman"
+                            android:layout_alignStart="@+id/namapaketpengiriman" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 100.000"
+                            android:id="@+id/hargapproduk"
+                            android:layout_above="@+id/tulisanbiayapengiriman"
+                            android:layout_alignLeft="@+id/biayaasuransi"
+                            android:layout_alignStart="@+id/biayaasuransi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 7000"
+                            android:id="@+id/biayapengiriman"
+                            android:layout_above="@+id/textView16"
+                            android:layout_alignLeft="@+id/hargapproduk"
+                            android:layout_alignStart="@+id/hargapproduk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 96"
+                            android:id="@+id/kodetransfer"
+                            android:layout_alignBottom="@+id/textView17"
+                            android:layout_alignLeft="@+id/biayapengiriman"
+                            android:layout_alignStart="@+id/biayapengiriman" />
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Checkout"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/kategori"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logocheckout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
