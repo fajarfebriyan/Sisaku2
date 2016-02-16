@@ -7,6 +7,13 @@ local.properties
 bin/
 proguard/
 
+*.iws
+*.iml
+*.ipr
+.idea
+.gradle/
+out
+
 # Android NDK
 *.o
 *.o.d
