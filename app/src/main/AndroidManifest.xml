@@ -29,7 +29,8 @@
         <activity android:name=".home1" />
         <activity android:name=".java" />
         <activity android:name=".maubeli2" />
-        <activity android:name=".checkout1"></activity>
+        <activity android:name=".checkout1" />
+        <activity android:name=".pembayaran1"></activity>
     </application>
 
 </manifest>
