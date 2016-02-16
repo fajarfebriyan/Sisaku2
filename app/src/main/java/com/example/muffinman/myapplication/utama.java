@@ -16,10 +16,16 @@ public class utama extends AppCompatActivity {
         ImageView akunsaya = (ImageView)findViewById(R.id.akuntombol);
 
         akunsaya.setOnClickListener(new View.OnClickListener() {
+            Intent intent;
             @Override
             public void onClick(View view) {
-                Intent pageakunsaya = new Intent(getBaseContext() , com.example.muffinman.myapplication.akunsaya.class);
-                startActivity(pageakunsaya);
+                if(locals.read(utama.this,getString(R.string.email)).isEmpty()) {
+                    intent = new Intent(getBaseContext(), login.class);
+                }
+                else {
+                    intent = new Intent(getBaseContext(), com.example.muffinman.myapplication.akunsaya.class);
+                }
+                startActivity(intent);
             }
         });
     }

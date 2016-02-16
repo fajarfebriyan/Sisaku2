@@ -114,7 +114,8 @@
                 android:textSize="16dp"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/belumadaakun"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:id="@+id/login_btn_daftar" />
 
         </RelativeLayout>
         </ScrollView>
