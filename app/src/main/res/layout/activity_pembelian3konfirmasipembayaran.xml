@@ -119,8 +119,8 @@
                             android:id="@+id/titikmerah"/>
 
                         <Button
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
+                            android:layout_width="90dp"
+                            android:layout_height="25dp"
                             android:text="Batal"
                             android:textColor="#8e292d"
                             android:id="@+id/tombolbataltransaksi"
@@ -130,11 +130,11 @@
                             android:layout_toStartOf="@id/titikmerah"
                             android:background="#ffbd21"/>
                         <Button
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
+                            android:layout_width="90dp"
+                            android:layout_height="25dp"
                             android:text="Konfirmasi"
                             android:textColor="#8e292d"
-                            android:id="@+id/tomboltransaksi"
+                            android:id="@+id/tombolkonfirmasi"
                             android:layout_alignParentBottom="true"
                             android:layout_marginBottom="5dp"
                             android:layout_toRightOf="@id/titikmerah"
