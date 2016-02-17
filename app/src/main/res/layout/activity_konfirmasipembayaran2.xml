@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Transaksi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:id="@+id/tulisannotrans"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14 - Feb - 2016"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tanggaltransaksi3"
+                        android:layout_below="@+id/tulisannotrans"
+                        android:layout_centerHorizontal="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#ffbd21"
+                        android:layout_below="@id/tanggaltransaksi3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Bank"
+                            android:id="@+id/tulisannamabank"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginStart="23dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Pemilik Rekening"
+                            android:id="@+id/tulisannamasipemilikrekening"
+                            android:textColor="#8e292d"
+                            android:layout_below="@+id/tulisannamabank"
+                            android:layout_alignLeft="@+id/tulisannamabank"
+                            android:layout_alignStart="@+id/tulisannamabank"
+                            android:layout_marginTop="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nomor Rekening"
+                            android:id="@+id/nomorrekeningsisaku"
+                            android:layout_marginTop="13dp"
+                            android:textColor="#8e292d"
+                            android:layout_below="@+id/tulisannamasipemilikrekening"
+                            android:layout_alignLeft="@+id/tulisannamasipemilikrekening"
+                            android:layout_alignStart="@+id/tulisannamasipemilikrekening" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cabang"
+                            android:id="@+id/cabangbankpengirim"
+                            android:layout_marginTop="13dp"
+                            android:textColor="#8e292d"
+                            android:layout_below="@+id/nomorrekeningsisaku"
+                            android:layout_alignLeft="@+id/nomorrekeningsisaku"
+                            android:layout_alignStart="@+id/nomorrekeningsisaku" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView18"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginStart="19dp"
+                            android:textColor="#8e292d"
+                            android:layout_above="@+id/tulisannamasipemilikrekening"
+                            android:layout_toRightOf="@+id/tulisannamasipemilikrekening"
+                            android:layout_toEndOf="@+id/tulisannamasipemilikrekening" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView19"
+                            android:textColor="#8e292d"
+                            android:layout_above="@+id/nomorrekeningsisaku"
+                            android:layout_alignLeft="@+id/textView18"
+                            android:layout_alignStart="@+id/textView18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView20"
+                            android:textColor="#8e292d"
+                            android:layout_above="@+id/cabangbankpengirim"
+                            android:layout_alignLeft="@+id/textView19"
+                            android:layout_alignStart="@+id/textView19" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView21"
+                            android:textColor="#8e292d"
+                            android:layout_alignBottom="@+id/cabangbankpengirim"
+                            android:layout_alignLeft="@+id/textView20"
+                            android:layout_alignStart="@+id/textView20" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText"
+                            android:layout_alignBottom="@+id/textView18"
+                            android:layout_toRightOf="@+id/textView18"
+                            android:layout_marginLeft="39dp"
+                            android:layout_marginStart="39dp"
+                            android:ems="3"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText2"
+                            android:layout_above="@+id/nomorrekeningsisaku"
+                            android:layout_alignLeft="@+id/editText"
+                            android:layout_alignStart="@+id/editText"
+                            android:ems="5"
+                            />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText3"
+                            android:layout_above="@+id/cabangbankpengirim"
+                            android:layout_alignLeft="@+id/editText2"
+                            android:layout_alignStart="@+id/editText2"
+                            android:ems="5"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText4"
+                            android:layout_alignBottom="@+id/textView21"
+                            android:layout_alignLeft="@+id/editText3"
+                            android:layout_alignStart="@+id/editText3"
+                            android:ems="5"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#ffbd21"
+                        android:layout_marginTop="220dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nomor Rekening Anda"
+                            android:id="@+id/nomorrekeninguser"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginStart="23dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#8e292d" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah yang dibayarkan"
+                            android:id="@+id/jumlahuangyangdibayar"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#8e292d"
+                            android:layout_below="@+id/nomorrekeninguser"
+                            android:layout_alignLeft="@+id/nomorrekeninguser"
+                            android:layout_alignStart="@+id/nomorrekeninguser" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView22"
+                            android:textColor="#8e292d"
+                            android:layout_alignTop="@+id/nomorrekeninguser"
+                            android:layout_toRightOf="@+id/jumlahuangyangdibayar"
+                            android:layout_toEndOf="@+id/jumlahuangyangdibayar"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:id="@+id/textView23"
+                            android:textColor="#8e292d"
+                            android:layout_alignBottom="@+id/jumlahuangyangdibayar"
+                            android:layout_alignLeft="@+id/textView22"
+                            android:layout_alignStart="@+id/textView22" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText5"
+                            android:ems="5"
+                            android:layout_alignBottom="@+id/textView23"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="38dp"
+                            android:layout_marginEnd="38dp" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editText6"
+                            android:ems="5"
+                            android:layout_alignBottom="@+id/textView22"
+                            android:layout_alignRight="@+id/editText5"
+                            android:layout_alignEnd="@+id/editText5" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Konfirmasi Pembayaran"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/kategori"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logokonfirmasipembayaran"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -4,13 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logomenu"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".utama">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,7 +30,10 @@
         <activity android:name=".java" />
         <activity android:name=".maubeli2" />
         <activity android:name=".checkout1" />
-        <activity android:name=".pembayaran1"></activity>
+        <activity android:name=".pembayaran1" />
+        <activity android:name=".konfirmasipembayaran" />
+        <activity android:name=".konfirmasipembayaran2" />
+        <activity android:name=".pembayaransukses"></activity>
     </application>
 
 </manifest>

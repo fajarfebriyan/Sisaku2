@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah yang harus dibayar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="18dp"
+                        android:textColor="#000"/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#8e292d"
+                        android:id="@+id/relativeLayout2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Rp.107.096"
+                            android:textColor="#fff"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20dp"
+                            android:id="@+id/kotakharga"/>
+                            />
+
+
+                    </RelativeLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/penanda"
+                        android:layout_marginTop="350dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/penanda4"/>
+
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:background="#8e292d"
+                        android:layout_alignBottom="@+id/penanda4"
+                        android:layout_toLeftOf="@id/penanda4"
+                        android:layout_toStartOf="@id/penanda4"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:id="@+id/relativeLayout3">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="Mandiri Cabang"
+                            android:id="@+id/infobankmandiri"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="9000025920100"
+                            android:layout_below="@id/infobankmandiri"
+                            android:id="@+id/norekmandiri"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="a/n Sisaku"
+                            android:layout_below="@id/norekmandiri"
+                            android:id="@+id/anmandiri"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:background="#8e292d"
+
+                        android:layout_alignBottom="@id/penanda4"
+                        android:layout_toRightOf="@id/penanda4"
+                        android:layout_toEndOf="@id/penanda4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/relativeLayout4">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="BCA Cabang"
+                            android:id="@+id/infobankbca"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="9000025920100"
+                            android:layout_below="@id/infobankbca"
+                            android:id="@+id/norekbca"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="a/n Sisaku"
+                            android:layout_below="@id/norekbca"
+                            android:id="@+id/anbca"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:background="#8e292d"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/penanda4"
+                        android:layout_toRightOf="@id/penanda4"
+                        android:layout_toEndOf="@id/penanda4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="BNI Cabang"
+                            android:id="@+id/infobankbni"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="9000025920100"
+                            android:layout_below="@id/infobankbni"
+                            android:id="@+id/norekbni"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="a/n Sisaku"
+                            android:layout_below="@id/norekbni"
+                            android:id="@+id/anbni"
+                            android:layout_marginTop="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:background="#8e292d"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/penanda4"
+                        android:layout_toLeftOf="@id/penanda4"
+                        android:layout_toStartOf="@id/penanda4"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="BRI Cabang"
+                            android:id="@+id/infobankbri"
+                            android:layout_marginTop="25dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="9000025920100"
+                            android:layout_below="@id/infobankbri"
+                            android:id="@+id/norekbri"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffbd21"
+                            android:text="a/n Sisaku"
+                            android:layout_below="@id/norekbri"
+                            android:id="@+id/anbri"
+                            android:layout_marginTop="10dp"
+                            />
+                    </RelativeLayout>
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mandirilogo"
+                        android:layout_above="@+id/relativeLayout3"
+                        android:layout_toLeftOf="@id/penanda4"
+                        android:layout_toStartOf="@id/penanda4"
+                        android:layout_marginRight="35dp"
+                        android:id="@+id/imageView" />
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bcalogo"
+                        android:layout_alignTop="@+id/imageView"
+                        android:layout_alignLeft="@+id/relativeLayout4"
+                        android:layout_alignStart="@+id/relativeLayout4"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginStart="29dp"
+                        android:id="@+id/imageView2" />
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/brilogo"
+                        android:layout_alignTop="@+id/penanda4"
+                        android:layout_alignRight="@+id/imageView"
+                        android:layout_alignEnd="@+id/imageView"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp" />
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bnilogo"
+                        android:layout_alignTop="@+id/penanda4"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignStart="@+id/imageView2" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Konfirmasi Pembayaran"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/kategori"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logokonfirmasipembayaran"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
