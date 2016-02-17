@@ -33,7 +33,10 @@
         <activity android:name=".pembayaran1" />
         <activity android:name=".konfirmasipembayaran" />
         <activity android:name=".konfirmasipembayaran2" />
-        <activity android:name=".pembayaransukses"></activity>
+        <activity android:name=".pembayaransukses" />
+        <activity android:name=".pembelian3konfirmasipembayaran" />
+        <activity android:name=".pembelian4konfirmasipenerimaan" />
+        <activity android:name=".pembelian5daftartransaksi"></activity>
     </application>
 
 </manifest>

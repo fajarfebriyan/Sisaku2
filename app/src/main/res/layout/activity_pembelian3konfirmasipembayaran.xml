@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/kotaknol"
+    android:paddingLeft="@dimen/kotaknol"
+    android:paddingRight="@dimen/kotaknol"
+    android:paddingTop="@dimen/kotaknol"
+    android:background="#8e292d"
+    tools:context="com.example.muffinman.myapplication.utama">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/kotaklimalima"
+        android:paddingLeft="@dimen/kotaknol"
+        android:paddingRight="@dimen/kotaknol"
+        android:paddingTop="50dp"
+        android:background="#8e292d"
+        tools:context="com.example.muffinman.myapplication.utama">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/kotaknol"
+            android:paddingLeft="@dimen/kotaknol"
+            android:paddingRight="@dimen/kotaknol"
+            android:paddingTop="@dimen/kotaknol"
+            android:background="#f1e5d9"
+            tools:context="com.example.muffinman.myapplication.utama">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/kotak16"
+                    android:paddingLeft="@dimen/kotak16"
+                    android:paddingRight="@dimen/kotak16"
+                    android:paddingTop="@dimen/kotak16"
+                    tools:context="com.example.muffinman.myapplication.utama">
+
+                    <RelativeLayout
+                        android:layout_width="360dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/relative1id"
+                        >
+
+                        <ImageView
+                            android:layout_width="360dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/kotaktransaksi"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/kotaktransaksi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="No. Transaksi"
+                            android:id="@+id/notransaksi"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#FFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="15-Feb-2016"
+                            android:id="@+id/tanggaltransaksi"
+                            android:layout_alignTop="@+id/notransaksi"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:textColor="#FFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pembelian dari "
+                            android:id="@+id/tulisanpembeliandari"
+                            android:textColor="#FFF"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/notransaksi"
+                            android:layout_alignLeft="@+id/notransaksi"
+                            android:layout_alignStart="@+id/notransaksi"
+                            android:layout_marginTop="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jatuh Tempo"
+                            android:id="@+id/tulisanjatuhtempo"
+                            android:textColor="#FFF"
+                            android:textSize="15dp"
+                            android:layout_below="@+id/tulisanpembeliandari"
+                            android:layout_alignLeft="@+id/tulisanpembeliandari"
+                            android:layout_alignStart="@+id/tulisanpembeliandari"
+                            android:layout_marginTop="15dp" />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/titikmerah"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/titikmerah"/>
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Batal"
+                            android:textColor="#8e292d"
+                            android:id="@+id/tombolbataltransaksi"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toLeftOf="@id/titikmerah"
+                            android:layout_toStartOf="@id/titikmerah"
+                            android:background="#ffbd21"/>
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Konfirmasi"
+                            android:textColor="#8e292d"
+                            android:id="@+id/tomboltransaksi"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/titikmerah"
+                            android:layout_toEndOf="@id/titikmerah"
+                            android:background="#ffbd21"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Pembeli"
+                            android:id="@+id/namapembeli"
+                            android:textColor="#FFF"
+                            android:textSize="15dp"
+                            android:layout_toRightOf="@id/titikmerah"
+                            android:layout_toEndOf="@id/titikmerah"
+                            android:layout_alignBottom="@id/tulisanpembeliandari"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30 Feb 2016"
+                            android:id="@+id/tanggaljatuhtempo"
+                            android:textColor="#FFF"
+                            android:textSize="15dp"
+                            android:layout_toRightOf="@id/titikmerah"
+                            android:layout_toEndOf="@id/titikmerah"
+                            android:layout_alignBottom="@id/tulisanjatuhtempo"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pengaturan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logokonfirmasipembayaran2"
+
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/beranda"
+        android:id="@+id/berandatombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/akunsaya"
+        android:id="@+id/akuntombol"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pencarian"
+        android:layout_alignTop="@+id/favtombol"
+        android:layout_centerInParent="true"
+        android:id="@+id/pencariantombol" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/favorite"
+        android:id="@+id/favtombol"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/berandatombol"
+        android:layout_toEndOf="@+id/berandatombol"
+        android:layout_toStartOf="@id/pencariantombol"
+        android:layout_toLeftOf="@id/pencariantombol"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/berita"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/pencariantombol"
+        android:layout_toEndOf="@id/pencariantombol"
+        android:layout_toStartOf="@id/akuntombol"
+        android:layout_toLeftOf="@id/akuntombol" />
+</RelativeLayout>
