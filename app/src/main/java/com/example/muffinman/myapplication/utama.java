@@ -19,7 +19,7 @@ public class utama extends AppCompatActivity {
             Intent intent;
             @Override
             public void onClick(View view) {
-                if(locals.read(utama.this,getString(R.string.email)).isEmpty()) {
+                if(local_g.read(utama.this,getString(R.string.email)).isEmpty()) {
                     intent = new Intent(getBaseContext(), login.class);
                 }
                 else {

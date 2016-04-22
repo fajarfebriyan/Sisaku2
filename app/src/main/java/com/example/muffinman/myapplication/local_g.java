@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 /**
  * Created by Ervina on 2/16/2016.
  */
-public class locals {
+public class local_g {
     private static String filename="com.example.muffinman.myapplication.pref";
 
 
