@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SiSaKu</string>
     <string name="email">email</string>
+    <string name="URLRegister">https://sisakuindonesia.com/webapi/register_user_android.php</string>
 </resources>
